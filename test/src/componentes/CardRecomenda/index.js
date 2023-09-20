@@ -51,11 +51,11 @@ function cardRecomenda({titulo, subtitulo, descricao, img,}){
         <Card>
             <div>
                 <Titulo tamanhoFonte="16px" cor="#EB9B00">{titulo}</Titulo>
-                <h4>{subtitulo}</>
-                <p>{descricao}</p>
+                <Subtitulo>{subtitulo}</Subtitulo>
+                <Descricao>{descricao}</Descricao>
             </div>
-                <img src={img}/>
-                <button>Saiba mais</button>
+                <ImgLivro src={img}/>
+                <Botao>Saiba mais</Botao>
         </Card>
     )
 }

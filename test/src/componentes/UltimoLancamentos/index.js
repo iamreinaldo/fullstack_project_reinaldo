@@ -1,8 +1,8 @@
 import { livros } from "./dadosUltimosLancamentos"
 import { Titulo } from "../Titulo"
-import cardRecomenda from "../cardRecomenda"
 import imagemLivro from "../../imagens/livro2.png" 
 import styled from "styled-components"
+import CardRecomenda from "../CardRecomenda"
 
 const UltimosLancamentosContainer = styled.section`
     background-color: #EBECEE;
@@ -30,12 +30,12 @@ return(
             <img src = {livro.src}/>
             ))}
         </NovosLivrosContainer>
-        <cardRecomenda>
+        <CardRecomenda
             titulo="Talvez você se interesse por..."
             subtitulo="Angular 11"
             descricao="Construindo uma aplicacao com plataforma Google"
             img = {imagemLivro}
-        </cardRecomenda>
+            />
     </UltimosLancamentosContainer>
 
 )
